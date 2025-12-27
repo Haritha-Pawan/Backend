@@ -24,6 +24,11 @@ app.get("/", (req, res) => {
   res.send("Backend is running!");
 });
 
+
+app.get("/test", (req, res) => {
+  res.send("Post routes loaded");
+});
+
 // Routes
 app.use("/post", postRoutes); // all /post requests go to postRoutes
 
