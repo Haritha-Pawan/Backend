@@ -20,6 +20,10 @@ app.use(cors({
 }));
 app.use(bodyParser.json());
 
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
+});
+
 // Routes
 app.use("/post", postRoutes); // all /post requests go to postRoutes
 
